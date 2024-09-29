@@ -4,7 +4,8 @@
 
 *{
     font-family: "Inter", system-ui;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    margin: 0px;
 }
 
 body {
@@ -97,6 +98,7 @@ header .header-link i {
     justify-content: center;
     border-radius: 15px;
     transition: 0.5s;
+    margin-top: 20px;
 }
 
 #p-link:hover {
