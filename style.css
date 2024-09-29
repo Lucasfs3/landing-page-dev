@@ -154,6 +154,10 @@ header .header-link i {
     transition: 0.5s;
 }
 
+.doff {
+    display: none;
+}
+
 .header-link:hover {
     color: #029306 !important;
     box-shadow: 0px 0px 20px 3px #029306;
@@ -290,5 +294,8 @@ footer {
         width: 100%;
         margin-top: 100px;
         transform: scale(1.3);
+    }
+    .doff {
+        display: block;
     }
 }
