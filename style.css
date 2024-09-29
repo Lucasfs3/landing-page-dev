@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", system-ui;
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #151515;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsla(0, 0%, 38%, 0.38);
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+header nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+header .header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: #f4f4f4;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 38%, 0.38);
+    width: 130px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+header .header-link i {
+    margin-right: 5px;
+}
+
+#sec1 {
+    text-align: center;
+}
+
+#sec1 h1 {
+    color: #f4f4f4;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#sec1 #h1-degrade {
+    background: linear-gradient(to bottom, #f4f4f4 35%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sec1 p {
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+#sec1 a {
+    font-size: 30px;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, #f4f4f4 35%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sec1 #p-link {
+    background-color: hsla(0, 0%, 38%, 0.38);
+    width: 290px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#p-link:hover {
+    color: #029306 !important;
+    box-shadow: 0px 0px 20px 3px #029306;
+}
+
+#p-link a {
+    padding: 10px 30px 10px 30px;
+}
+
+#sec2 img{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+#sec2 p {
+    margin-top: 0px;
+    color: #f4f4f4;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sec2 #img2s {
+    margin-top: 0px;
+}
+
+#sec3 {
+    text-align: center;
+}
+
+#sec3 img {
+    display: block;
+    margin: auto;    
+}
+
+#sec3 h2 {
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+#sec3 .header-link, .header-link-inst {
+    margin-right: 15px;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: #f4f4f4;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 38%, 0.38);
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.header-link:hover {
+    color: #029306 !important;
+    box-shadow: 0px 0px 20px 3px #029306;
+}
+
+.header-link-inst:hover {
+    color: #C0259B;
+    box-shadow: 0px 0px 20px 3px #C0259B;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 38%, 0.38);
+    height: 30px;
+    margin-top: 100px;
+    color: white;
+}
+
+.star-field {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.star {
+    z-index: -1;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 2px; /* Tamanho da estrela */
+    height: 2px; /* Tamanho da estrela */
+    animation: twinkle 5s infinite;
+    opacity: 0.8;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Cria várias estrelas com posições aleatórias */
+.star:nth-child(1) { top: 10%; left: 20%; }
+.star:nth-child(2) { top: 50%; left: 70%; }
+.star:nth-child(3) { top: 30%; left: 40%; }
+.star:nth-child(4) { top: 70%; left: 90%; }
+.star:nth-child(5) { top: 80%; left: 10%; }
+.star:nth-child(6) { top: 15%; left: 55%; }
+.star:nth-child(7) { top: 40%; left: 25%; }
+.star:nth-child(8) { top: 85%; left: 60%; }
+.star:nth-child(9) { top: 60%; left: 80%; }
+.star:nth-child(10) { top: 25%; left: 5%; }
+.star:nth-child(11) { top: 30%; left: 45%; }
+.star:nth-child(12) { top: 72%; left: 33%; }
+.star:nth-child(13) { top: 44%; left: 93%; }
+.star:nth-child(14) { top: 12%; left: 16%; }
+.star:nth-child(15) { top: 16%; left: 43%; }
+.star:nth-child(16) { top: 43%; left: 52%; }
+.star:nth-child(17) { top: 74%; left: 83%; }
+.star:nth-child(18) { top: 85%; left: 13%; }
+.star:nth-child(19) { top: 22%; left: 40%; }
+.star:nth-child(20) { top: 44%; left: 63%; }
+.star:nth-child(21) { top: 7%; left: 77%; }
+.star:nth-child(22) { top: 4%; left: 83%; }
+.star:nth-child(23) { top: 25%; left: 73%; }
+.star:nth-child(24) { top: 40%; left: 32%; }
+.star:nth-child(25) { top: 88%; left: 10%; }
+.star:nth-child(26) { top: 5%; left: 55%; }
+.star:nth-child(27) { top: 40%; left: 25%; }
+.star:nth-child(28) { top: 22%; left: 45%; }
+.star:nth-child(29) { top: 68%; left: 12%; }
+.star:nth-child(30) { top: 10%; left: 78%; }
+.star:nth-child(31) { top: 55%; left: 25%; }
+.star:nth-child(32) { top: 75%; left: 92%; }
+.star:nth-child(33) { top: 35%; left: 60%; }
+.star:nth-child(34) { top: 48%; left: 15%; }
+.star:nth-child(35) { top: 65%; left: 50%; }
+.star:nth-child(36) { top: 82%; left: 28%; }
+.star:nth-child(37) { top: 15%; left: 62%; }
+.star:nth-child(38) { top: 90%; left: 40%; }
+.star:nth-child(39) { top: 42%; left: 72%; }
+.star:nth-child(40) { top: 12%; left: 34%; }
+.star:nth-child(41) { top: 28%; left: 80%; }
+.star:nth-child(42) { top: 58%; left: 10%; }
+.star:nth-child(43) { top: 72%; left: 67%; }
+.star:nth-child(44) { top: 85%; left: 22%; }
+.star:nth-child(45) { top: 40%; left: 90%; }
+.star:nth-child(46) { top: 18%; left: 12%; }
+.star:nth-child(47) { top: 68%; left: 35%; }
+.star:nth-child(48) { top: 30%; left: 50%; }
+.star:nth-child(49) { top: 77%; left: 65%; }
+.star:nth-child(50) { top: 52%; left: 85%; }
+
+/* Continue adicionando estrelas conforme necessário */
+
+
+@media (max-width: 927px) {
+    #sec2 #img1s {
+        width:70%;
+    }
+
+    #sec2 #img2s {
+        width:100%;
+        transform: scale(1.3);
+    }
+
+    #sec2 p {
+        font-size: 16px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    main #sec1 h1 {
+        font-size: 40px;
+    }
+
+    main #sec1 p  {
+        font-size: 16px;
+    }
+
+    #sec3 img {
+        width: 100%;
+        margin-top: 100px;
+        transform: scale(1.3);
+    }
+}
